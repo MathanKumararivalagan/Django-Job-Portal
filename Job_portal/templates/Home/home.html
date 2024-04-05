@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "assets/CSS/landing.css" %}">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container1">
+        <div>
+            <img src="{% static "assets/images/job.jpg" %}" alt="image">
+        </div>
+        <div class="home-content">
+            <h1>DJANGO JOB PORTAL</h1>
+            <p>Explore Our Jobs here!, we have 1000+ job postings. Login and get your dream job</p>
+        </div>
+        
+    </div>
+
+{% endblock %}
+</body>
+</html>

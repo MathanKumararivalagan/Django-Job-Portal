@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "assets/CSS/home.css" %}">
+    <title>Seeker</title>
+</head>
+
+<style>
+  .navbar a{
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: rgb(6, 26, 69);
+    background-color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 43px;
+    margin-bottom: 43px;
+    margin-left: 60px;
+    transition: all 0.5s;
+  }
+  
+</style>
+<body>
+    <div class="home">
+        <div class="header">
+            <div class=" title">
+                DJANGO JOB PORTAL
+                <div class="header-elements">
+                    <a href="./sek-home.html">Home</a>
+                    <a href="./home.html">Apply for Jobs </a>
+                    <a href="./details.html">Update Profile</a>
+                    <b>Welcome, Applicant 1</b>
+                </div>
+            </div>
+            <div class="navbar">
+                <a href="">LOGOUT</a>
+            </div>
+        </div>
+        
+        </div>
+    
+    <div class="rec-home">
+        <div class="dash">
+            <h1>Welcome to Job Seeker's Dashboard ! 😊</h1>
+        </div>
+    </div>
+
+    <div class="rec-home">
+        <div class="dash">
+            <h1>Manage Applied Jobs :</h1><br>
+            <div class="container">
+                <ul class="responsive-table">
+                  <li class="table-header">
+                    <div class="col col-1">Job Title</div>
+                    <div class="col col-2">Location</div>
+                    <div class="col col-3">Job type</div>
+                    <div class="col col-4">Industry</div>
+                    <div class="col col-5">View job</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">Developer</div>
+                    <div class="col col-2" data-label="Customer Name">Coimbatore</div>
+                    <div class="col col-3" data-label="Amount">Full Time</div>
+                    <div class="col col-4" data-label="Payment Status">IT</div>
+                    <div class="col col-5" data-label="Payment Status"><a href="">View Job</a></div>
+                  </li>
+
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">Developer</div>
+                    <div class="col col-2" data-label="Customer Name">Coimbatore</div>
+                    <div class="col col-3" data-label="Amount">Full Time</div>
+                    <div class="col col-4" data-label="Payment Status">IT</div>
+                    <div class="col col-5" data-label="Payment Status"><a href="">View Job</a></div>
+                  </li>
+
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">Developer</div>
+                    <div class="col col-2" data-label="Customer Name">Coimbatore</div>
+                    <div class="col col-3" data-label="Amount">Full Time</div>
+                    <div class="col col-4" data-label="Payment Status">IT</div>
+                    <div class="col col-5" data-label="Payment Status"><a href="">View Job</a></div>
+                  </li>
+
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">Developer</div>
+                    <div class="col col-2" data-label="Customer Name">Coimbatore</div>
+                    <div class="col col-3" data-label="Amount">Full Time</div>
+                    <div class="col col-4" data-label="Payment Status">IT</div>
+                    <div class="col col-5" data-label="Payment Status"><a href="">View Job</a></div>
+                  </li>
+
+
+                </ul>
+              </div>
+        </div>
+    
+        
+        </div>
+    </div>
+
+    
+</body>
+</html>

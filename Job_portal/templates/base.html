@@ -1,0 +1,31 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "assets/CSS/landing.css" %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="point">
+        <div class="navbar">
+            <p>DJANGO JOB PORTAL</p>
+            <a href="{% url "home" %}">Home</a>
+            <a href="{% url "login" %}">Applicant</a>
+            <a href="{% url "rec-login" %}">Job Poster</a>
+            
+
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+    
+
+
+</body>
+</html>

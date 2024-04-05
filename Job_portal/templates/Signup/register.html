@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "assets/CSS/landing.css" %}">
+    <link rel="stylesheet" href="{% static "assets/CSS/home.css" %}">
+   
+    <title>Signup</title>
+</head>
+<body>
+
+
+    <div class="heading">
+        <h1>Register / Signup - Job Seeker</h1>
+    </div>
+    <div class="info">
+        
+        <div class="log-form">
+            
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for=""> Username : </label><br>
+                <input type="text" placeholder=" Email Address" name="username"><br>
+
+                <label for=""> Email address : </label><br>
+                <input type="email" placeholder=" Email Address" name="email"><br>
+
+                <label for="">Password :</label><br>
+                <input type="password" placeholder=" Enter Password" name="password"><br>
+
+
+                <p>Already have an account?🤔  <a href="{% url "login" %}">Login</a></p>
+               
+                <button>Signup</button>
+        
+            </form>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
